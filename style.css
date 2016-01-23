@@ -64,10 +64,22 @@ p {
 	line-height: 1.5;
 }
 
+a {
+    color: inherit;
+    border-bottom: 3px solid #FFF579;
+    box-shadow: inset 0 -2px 0 #FFF579;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    background-color: #FFF579;
+}
+
 ul {
 	margin-left: 1.2rem;
 }
 
 li {
 	list-style: circle;
+    margin-bottom: 0.5rem;
 }
