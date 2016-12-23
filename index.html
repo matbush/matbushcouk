@@ -13,8 +13,99 @@
     <meta property="og:site_name" content="Hi, I'm Matt Bush">
     <meta name="twitter:image:alt" content="Screenshot of matbush.co.uk">
     <meta name="twitter:site" content="@matbush">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen" href="style.css">
+    <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,body {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        body {
+            font-family: -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen-Sans,
+                Ubuntu,
+                Cantarell,
+                "Helvetica Neue",
+                sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 1.5;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+
+        #particles-js {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+        }
+
+        canvas {
+          display:block;
+          vertical-align:bottom;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 2rem;
+            z-index: 1;
+        }
+
+        h1, p {
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        a {
+            color: inherit;
+            border-bottom: 3px solid #FFF579;
+            box-shadow: inset 0 -2px 0 #FFF579;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #FFF579;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+        }
+
+        li {
+            list-style: circle;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <div id="particles-js"></div>
