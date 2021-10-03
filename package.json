@@ -1,0 +1,22 @@
+{
+  "name": "matbush.co.uk",
+  "version": "1.0.0",
+  "description": "My landing page",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp -a src/ dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matbush/matbush.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matbush/matbush.github.io/issues"
+  },
+  "homepage": "https://github.com/matbush/matbush.github.io#readme"
+}
