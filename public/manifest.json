@@ -1,8 +1,8 @@
 {
   "name": "matbush.co.uk",
   "short_name": "matbush",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#fbfaff",
+  "background_color": "#fbfaff",
   "display": "browser",
   "Scope": "/",
   "start_url": "/",

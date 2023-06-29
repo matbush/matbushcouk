@@ -1,22 +1,16 @@
 {
   "name": "matbush.co.uk",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My landing page",
-  "main": "main.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cp -a src/ dist/"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matbush/matbushcouk.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/matbush/matbushcouk/issues"
-  },
-  "homepage": "https://github.com/matbush/matbushcouk#readme"
+  "dependencies": {
+    "astro": "^2.7.2"
+  }
 }

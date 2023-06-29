@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Hi, I'm Matt Bush.">
+    <main>
+        <h1>Hi, I'm Matt Bush 👨🏼‍💻</h1>
+        <p>
+            Lead Engineer <a
+                href="https://www.pulselive.com"
+                target="_blank"
+                rel="noopener">@pulselive</a
+            >
+            <p>
+                Tech lead for <a
+                    href="https://www.afl.com.au"
+                    target="_blank"
+                    rel="noopener">afl.com.au</a
+                >
+            </p>
+            <p>Focused on frontend and web performance.</p>
+
+            <h2>🛠 Some projects I've worked on</h2>
+            <ul>
+                <li>
+                    <a
+                        href="https://www.afl.com.au/"
+                        target="_blank"
+                        rel="noopener"
+                        >Australian Football League - afl.com.au</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.tennistv.com/"
+                        target="_blank"
+                        rel="noopener">Tennis TV - tennistv.com</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.wtatennis.com/"
+                        target="_blank"
+                        rel="noopener"
+                        >Womens Tennis Association - wtatennis.com</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.fina.org/"
+                        target="_blank"
+                        rel="noopener">FINA - fina.org</a
+                    >
+                </li>
+            </ul>
+            <h2>👋 Get in touch</h2>
+            <ul>
+                <li>
+                    <a
+                        href="http://twitter.com/matbush"
+                        target="_blank"
+                        rel="noopener">@matbush</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://uk.linkedin.com/in/matbush"
+                        target="_blank"
+                        rel="noopener">in/matbush</a
+                    >
+                </li>
+                <li><a href="mailto:mat@matbush.co.uk">email</a></li>
+            </ul>
+        </p>
+    </main>
+
+    <style>
+        main {
+            margin: auto;
+            padding: 1.5rem;
+            max-width: 60ch;
+        }
+
+        h1,
+        p {
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(1.2rem, 8vw, 3.7rem);
+            font-weight: 900;
+        }
+
+        h2 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 900;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        a {
+            color: inherit;
+            border-bottom: 3px solid var(--accent);
+            box-shadow: inset 0 -2px 0 var(--accent);
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: var(--accent);
+            color: var(--accent-fore);
+        }
+
+        p a {
+            font-weight: 600;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+        }
+
+        li {
+            list-style: circle;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</Layout>

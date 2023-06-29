@@ -1,0 +1,56 @@
+---
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Lead Engineer @pulselive.">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="canonical" href="https://www.matbush.co.uk" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta property="og:title" content={title}>
+        <meta property="og:description" content="Lead Engineer @pulselive.">
+        <meta property="og:image" content="https://www.matbush.co.uk/matbushcouk2.png">
+        <meta property="og:url" content="https://www.matbush.co.uk">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:site_name" content="Hi, I'm Matt Bush">
+        <meta name="twitter:image:alt" content="Screenshot of matbush.co.uk">
+        <meta name="twitter:site" content="@matbush">
+        <meta name="theme-color" content="#fbfaff" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#1b1b1b" media="(prefers-color-scheme: dark)">
+        <link rel="manifest" href="/manifest.json">
+        <title>{title}</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
+<style is:global>
+    :root {
+        --accent: rgb(101 30 224);
+        --accent-fore: #fff;
+        --bg: #fbfaff;
+        --text: #1b1b1b;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --accent: rgb(101 30 224);
+            --bg: #1b1b1b;
+            --text: #fff;
+        }
+    }
+
+    html {
+        font-family: system-ui, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+    }
+</style>
